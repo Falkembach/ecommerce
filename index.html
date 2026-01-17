@@ -1,15 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>SneakerHub - Sua Loja de Tênis</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is a basic index.html file.</p>
+    <!-- HEADER COM LOGO E NAVEGAÇÃO -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>SneakerHub</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#categorias" class="nav-link">Categorias</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                    <li><a href="#" class="nav-link carrinho">Carrinho (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">Os Melhores Tênis do Mercado</h2>
+            <p class="hero-description">Encontre o tênis perfeito para seu estilo e conforto</p>
+            <button class="hero-button">Explorar Coleção</button>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CATEGORIAS -->
+    <section class="categorias" id="categorias">
+        <div class="categorias-container">
+            <h2 class="section-title">Categorias de Tênis</h2>
+            <div class="categorias-grid">
+                <article class="categoria-card">
+                    <img src="images/corrida.jpg" alt="Tênis para Corrida">
+                    <h3>Corrida</h3>
+                    <p>Tênis leves e com amortecimento</p>
+                </article>
+                <article class="categoria-card">
+                    <img src="images/casual.jpg" alt="Tênis Casual">
+                    <h3>Casual</h3>
+                    <p>Confortáveis para o dia a dia</p>
+                </article>
+                <article class="categoria-card">
+                    <img src="images/basquete.jpg" alt="Tênis para Basquete">
+                    <h3>Basquete</h3>
+                    <p>Suporte e estabilidade máxima</p>
+                </article>
+                <article class="categoria-card">
+                    <img src="images/trilha.jpg" alt="Tênis para Trilha">
+                    <h3>Trilha</h3>
+                    <p>Grip e proteção para terrenos irregulares</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID COM PRODUTOS EM DESTAQUE -->
+    <section class="produtos" id="produtos">
+        <div class="produtos-container">
+            <h2 class="section-title">Produtos em Destaque</h2>
+            <div class="produtos-grid">
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="images/produto1.jpg" alt="Tênis Premium 1">
+                        <span class="desconto-badge">-20%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Nike Air Max 2024</h3>
+                        <p class="produto-categoria">Corrida</p>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 599,00</span>
+                            <span class="preco-atual">R$ 479,00</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <span class="estrelas">★★★★★</span>
+                            <span class="reviews">(128 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="images/produto2.jpg" alt="Tênis Premium 2">
+                        <span class="desconto-badge">-15%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Adidas Ultraboost</h3>
+                        <p class="produto-categoria">Casual</p>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 549,00</span>
+                            <span class="preco-atual">R$ 466,00</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <span class="estrelas">★★★★☆</span>
+                            <span class="reviews">(95 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="images/produto3.jpg" alt="Tênis Premium 3">
+                        <span class="desconto-badge">-25%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Puma RS-X</h3>
+                        <p class="produto-categoria">Basquete</p>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 499,00</span>
+                            <span class="preco-atual">R$ 374,00</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <span class="estrelas">★★★★★</span>
+                            <span class="reviews">(156 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="images/produto4.jpg" alt="Tênis Premium 4">
+                        <span class="desconto-badge">-10%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">New Balance 990</h3>
+                        <p class="produto-categoria">Trilha</p>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 629,00</span>
+                            <span class="preco-atual">R$ 566,00</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <span class="estrelas">★★★★★</span>
+                            <span class="reviews">(203 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="images/produto5.jpg" alt="Tênis Premium 5">
+                        <span class="desconto-badge">-30%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Converse All Star</h3>
+                        <p class="produto-categoria">Casual</p>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 349,00</span>
+                            <span class="preco-atual">R$ 244,00</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <span class="estrelas">★★★★☆</span>
+                            <span class="reviews">(87 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="images/produto6.jpg" alt="Tênis Premium 6">
+                        <span class="desconto-badge">-18%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Vans Old Skool</h3>
+                        <p class="produto-categoria">Casual</p>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 399,00</span>
+                            <span class="preco-atual">R$ 327,00</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <span class="estrelas">★★★★★</span>
+                            <span class="reviews">(142 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER COM INFORMAÇÕES, CONTATOS E LINKS -->
+    <footer class="footer" id="contato">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Sobre Nós</h3>
+                <p class="footer-text">A SneakerHub é a sua melhor opção para encontrar os melhores tênis do mercado com preços competitivos.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Informações</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Faq</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Contato</h3>
+                <ul class="footer-links">
+                    <li>📧 contato@sneakerhub.com</li>
+                    <li>📱 (11) 98765-4321</li>
+                    <li>📍 São Paulo, SP - Brasil</li>
+                    <li>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2024 SneakerHub. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
